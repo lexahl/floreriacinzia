@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  #background-color: #fdfaf5;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  background-image: url('img/catflower.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100%;
+}
+
+p {color:black;
+background-color: #FFFF00}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+<img src="img/logo.png" style="width:280px;height:280px;">
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-">orari di apertura</button></p>
+   
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Floreria Cinzia <a href="https://www.instagram.com/fioreria.cinzia" target="_blank">@fioreria.cinzia</a></p>
+    <p class="w3-large">💐 <a href="https://goo.gl/maps/8kmrhTMtv93vQ6o76" target="_blank"> Piazza S. Pertini, Zollio, Puglia, Italia</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>orari di apertura</h1>
+    </div>
+    <div class="w3-container">
+      <h5>martedì - sabato <b>09:00-13:00, 17:00-20:00</b></h5>
+      <h5>domenica <b>09:00-13:00</b></h5>
+      <h5>lunedì <b>chiuso</b></h5>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
